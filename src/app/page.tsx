@@ -34,7 +34,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen pt-28 pb-32">
+    <main className="min-h-screen pt-32 pb-32">
       <div className="flex flex-col items-center">
         <Image
           src="/logo.svg"

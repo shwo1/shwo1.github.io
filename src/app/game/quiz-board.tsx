@@ -69,7 +69,7 @@ export default function QuizBoard({ questions, notes, name }: QuizBoardProps) {
 
   if (quizFinished) {
     return (
-      <main className="min-h-screen pt-32 pb-40">
+      <main className="min-h-screen pt-44 pb-40">
         <div className="flex flex-col items-center">
           <div className="relative">
             <Image src="/vynil.png" alt="score-logo" width={200} height={200} />
@@ -95,7 +95,7 @@ export default function QuizBoard({ questions, notes, name }: QuizBoardProps) {
 
   if (showChallengeMessage) {
     return (
-      <main className="min-h-screen pt-56 pb-40">
+      <main className="min-h-screen pt-72 pb-40">
         <div className="text-center text-5xl">Challenge incoming</div>
       </main>
     );
@@ -109,7 +109,7 @@ export default function QuizBoard({ questions, notes, name }: QuizBoardProps) {
         <Image className="mt-1" src="/vynil.png" alt="score-logo" width={25} height={25} />
         <div key={`animate-${score}`} className={`text-4xl ml-2 ${score > 0 ? 'animate-pop-up' : ''}`}>{score}</div>
       </div>
-      <div className="text-center text-3xl pt-40 pb-40">
+      <div className="text-center text-3xl pt-44 pb-40">
         <h2>{currentQuestion.question}</h2>
         <ul className="mt-4 space-y-1">
           {currentQuestion.options.map((option, index) => (

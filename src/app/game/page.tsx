@@ -71,7 +71,7 @@ function GamePage() {
     return <QuizBoard questions={questions} notes={musicNotes} name={name} />;
   } else {
     return (
-      <main className="min-h-screen pt-56 pb-40">
+      <main className="min-h-screen pt-72 pb-40">
         {showMessage ?
           <div className="text-center text-5xl">Listen to and remember following music notes</div>
           :
